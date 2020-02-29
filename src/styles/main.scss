@@ -1,0 +1,53 @@
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/functions";
+@import "vendor/libs";
+@import "base/fonts";
+@import "base/general";
+@import "../blocks/modules";
+body {
+    font-family: "Roboto Slab";
+    font-weight: 400;
+}
+h1, h2, h3, h4, p {
+    padding: 0;
+    margin: 0;
+}
+.page-main {
+    background-image: url(../img/bg-main.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 181px;
+    max-width: 1172px;
+    margin: 0 auto;
+    &__logo {
+        display: block;
+        background-image: url(../img/logo.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 137px;
+        height: 28px;
+    }
+    &-list {
+        display: flex;
+        justify-content: flex-end;
+        list-style-type: none;
+        padding-left: 0;
+        &__item {
+            margin-left: 20px;
+            font-family: "Open Sans";
+            font-size: 16px;
+            color: #ffffff;
+        }
+    }
+}
+.wrapper {
+    max-width: 1172px;
+    margin: 0 auto;
+}
