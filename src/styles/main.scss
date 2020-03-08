@@ -10,10 +10,14 @@ $light-color: #ffffff;
 $accent-color: #65e496;
 $grey-color: #696980;
 $title-color: #44444f;
+$bg-color: #f5f6fa;
+
 
 body {
     font-family: "Roboto Slab";
     font-weight: 400;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 h1, h2, h3, h4, p {
@@ -30,6 +34,7 @@ h1, h2, h3, h4, p {
     background-image: url(../img/bg-main.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     color: $light-color;
     padding-bottom: 160px;
 }
@@ -168,9 +173,34 @@ h1, h2, h3, h4, p {
 }
 
 .page {
-    margin-top: 159px;
+    &_padding_159 {
+        padding-top: 159px;
+    }
+    &_padding_154 {
+        padding-top: 149px;
+    }
+    &_grey {
+        background-color: $bg-color;
+    }
     padding-bottom: 161px;
     color: $grey-color;
+    &__title {
+        text-align: center;
+        font-size: 48px;
+        font-weight: 700;
+        letter-spacing: 1.92px;
+        color: $title-color;
+        span {
+            display: block;
+            margin-top: 11px;
+            margin-bottom: 40px;
+            color: $accent-color;
+            font-size: 18px;
+            font-weight: 400;
+            text-transform: none;
+            letter-spacing: 0.9px;
+        }
+    }
 }
 
 .block-author {
@@ -194,7 +224,7 @@ h1, h2, h3, h4, p {
 .block-counter {
     display: flex;
     justify-content: space-around;
-    margin-top: 183px;
+    margin-top: 180px;
     &__item {
         justify-self: center;
         font-family: "Open Sans";
@@ -205,9 +235,114 @@ h1, h2, h3, h4, p {
             display: block;
             color: $accent-color;
             font-size: 80px;
-            font-family: "Roboto Slab - Thin";
+            font-family: "Roboto Slab";
+            font-weight: 100;
             letter-spacing: 3.2px;
-            padding-bottom: 10px;
+            padding-bottom: 13px;
         }        
+    }
+}
+
+.block-about {
+    display: flex;
+    justify-content: space-between;
+    &__text {
+        flex-basis: 40%;
+    }
+    &__table {
+        flex-basis: 46%;
+        margin-left: 100px;
+        }
+    &__subtitle {
+        font-size: 24px;
+        font-weight: 700;
+        color: $title-color;
+        letter-spacing: 1.2px;
+        padding-top: 43px;
+        padding-bottom: 17px;
+        &_margin_plus {
+            padding-left: 1px;
+        }
+        &_margin_minus {
+            margin-left: -33px;
+        }
+    }
+    &__description {
+        color: $grey-color;
+        font-family: "Open Sans";
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0.75px;
+    }
+    &__featured {
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 33px;
+        padding-left: 3px;
+        &-text {
+            color: #44444f;
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 0.9px;
+        }
+        &-list {
+            display: flex;
+            justify-content: flex-start;
+            list-style-type: none;
+        }
+        &-item {
+            width: 100%;
+            height: 18px;
+        }
+        &-link {
+            font-size: 18px;
+            text-decoration: none;
+            color: $accent-color;
+        }
+    }
+    &__list {
+        display: flex;
+        justify-content: flex-start;
+        flex-flow: column wrap;
+        height: 175px;
+        list-style-type: none;
+        margin-top: 7px;
+    }
+    &__item {
+        letter-spacing: 0.75px;
+        font-family: "Open Sans";
+        font-size: 15px;
+        color: $grey-color;
+        margin-right: 63px;
+        margin-top: 0;
+        margin-bottom: 10px;
+        &::before {
+            content: "+";
+            margin-left: -32px;
+            margin-right: 13px;
+            padding-left: 6px;
+            padding-right: 7px;
+            background-image: linear-gradient(to left, rgba(101, 228, 206, 0.7) 0%, rgba(101, 228, 161, 0.7) 100%);            
+            color: $light-color;
+            line-height: 22px;
+        }
+        &:hover:before {
+            background-color: $title-color;
+        }
+    }
+    &__btn {
+        display: block;
+        font-family: "Roboto Slab";
+        font-size: 18px;
+        letter-spacing: 0.72px;
+        padding: 15px 40px 14px 44px;
+        border-radius: 3px;
+        background-image: linear-gradient(to left, rgba(101, 228, 206, 0.7) 0%, rgba(101, 228, 161, 0.7) 100%);
+        box-shadow: 0 2px 0 rgba(101, 228, 125, 0.5);
+        text-decoration: none;
+        color: $light-color;
+        margin-left: -32px;
+        margin-top: 9px;
+        margin-bottom: 24px;
     }
 }

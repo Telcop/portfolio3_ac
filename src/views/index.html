@@ -23,7 +23,8 @@
         <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
         <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
         <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i|Roboto+Slab:400,700&display=swap" rel="stylesheet">        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i|Roboto+Slab:100,400,700&display=swap" rel="stylesheet">        
+        <link rel="stylesheet" href="../styles/all.min.css">
         <link rel="stylesheet" href="styles/main.css">
     </head>
     <body>
@@ -59,7 +60,7 @@
                 </div> 
             </div>
         </div>
-        <div class="page">
+        <div class="page page_padding_159">
             <div class="wrapper">
                 <div class="block-author">
                     <div class="block-text">
@@ -87,37 +88,37 @@
                 </div>
             </div>
         </div>
-        <div class="page page_gray">
+        <div class="page page_grey page_padding_154">
             <div class="wrapper">
-                <h1 class="title page__title">Book Contents<span>Let’s see what we have covered in the book</span></h1>
+                <h1 class="page__title">Book Contents<span>Let’s see what we have covered in the book</span></h1>
                 <div class="block-about">
-                    <div>
-                        <h3>About the book</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali qua. Ut enim ad minim veniam, quis nostrud exercitation ull amco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillu m dolore eu fugiat nulla pariatur.</p>
-                        <div>
-                            <h4>Featured in:</h4>        
-                            <ul>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
+                    <div class="block-about__text">
+                        <h3 class="block-about__subtitle block-about__subtitle_margin_plus">About the book</h3>
+                        <p class="block-about__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali qua. Ut enim ad minim veniam, quis nostrud exercitation ull amco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillu m dolore eu fugiat nulla pariatur.</p>
+                        <div class="block-about__featured">
+                            <h4 class="block-about__featured-text">Featured in:</h4>        
+                            <ul class="block-about__featured-list">
+                                <li class="block-about__featured-item"><a class="block-about__featured-link" href=""><i class="fab fa-stack-overflow"></i></a></li>
+                                <li class="block-about__featured-item"><a class="block-about__featured-link" href=""><i class="fab fa-amazon"></i></a></li>
+                                <li class="block-about__featured-item"><a class="block-about__featured-link" href=""><i class="fab fa-stack-overflow"></i></a></li>
                             </ul>
                         </div>
                     </div>
-                    <div>
-                        <h3>Table of contents</h3>
-                        <ol>
-                            <li>1. Lorem ipsum dolor sit amet</li>
-                            <li>2. Consectetur adipisicing elit</li>
-                            <li>3. Labore et dolore magna</li>
-                            <li>4. Consectetur adipisicing elit</li>
-                            <li>5. Labore et dolore magna</li>
-                            <li>6. Lorem ipsum dolor sit amet</li>
-                            <li>7. Consectetur adipisicing elit</li>
-                            <li>8. Labore et dolore magna</li>
-                            <li>9. Consectetur adipisicing elit</li>
-                            <li>10. Labore et dolore magna</li>
-                        </ol>
-                        <button>More</button>
+                    <div class="block-about__table">
+                        <h3 class="block-about__subtitle block-about__subtitle_margin_minus">Table of contents</h3>
+                        <ul class="block-about__list">
+                            <li class="block-about__item">1. Lorem ipsum dolor sit amet</li>
+                            <li class="block-about__item">2. Consectetur adipisicing elit</li>
+                            <li class="block-about__item">3. Labore et dolore magna</li>
+                            <li class="block-about__item">4. Consectetur adipisicing elit</li>
+                            <li class="block-about__item">5. Labore et dolore magna</li>
+                            <li class="block-about__item">6. Lorem ipsum dolor sit amet</li>
+                            <li class="block-about__item">7. Consectetur adipisicing elit</li>
+                            <li class="block-about__item">8. Labore et dolore magna</li>
+                            <li class="block-about__item">9. Consectetur adipisicing elit</li>
+                            <li class="block-about__item">10. Labore et dolore magna</li>
+                        </ul>
+                        <button class="block-about__btn">More</button>
                     </div>
                 </div>
             </div>
@@ -125,5 +126,6 @@
         @@include("../blocks/modules/footer/footer.html")
         <script src="js/main.js"></script>
         <script src="js/vendor.js"></script>
+        <script src="../js/all.min.js"></script>
     </body>
 </html>
