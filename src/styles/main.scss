@@ -6,6 +6,7 @@
 @import "base/general";
 @import "../blocks/modules";
 
+
 $light-color: #ffffff;
 $accent-color: #65e496;
 $grey-color: #696980;
@@ -287,10 +288,11 @@ h1, h2, h3, h4, p {
         }
         &-list {
             list-style-type: none;
-        }
+            margin-left: 23px;
         &-item {
             display: inline-block;
             font-size: 18px;
+            padding-right: 13px;
         }
         &-link {
             text-decoration: none;
