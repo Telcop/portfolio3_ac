@@ -250,6 +250,8 @@ h1, h2, h3, h4, p {
         background-image: linear-gradient(to left, rgba(101, 228, 206, 0.7) 0%, rgba(101, 228, 161, 0.7) 100%);
         box-shadow: 0 2px 0 rgba(101, 228, 125, 0.5);
         color: $light-color;
+        border: none;
+        outline: none;
         cursor: pointer;
     }
 }
@@ -394,6 +396,8 @@ h1, h2, h3, h4, p {
         margin-left: -32px;
         margin-top: 9px;
         margin-bottom: 24px;
+        border: none;
+        outline: none;
         cursor: pointer;
     }
 }
@@ -428,6 +432,9 @@ h1, h2, h3, h4, p {
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.96px;
+            &_right {
+                left: 71px;
+            }
             span {
                 display: block;
                 color: $accent-color;
@@ -439,6 +446,9 @@ h1, h2, h3, h4, p {
                 text-transform: none;
                 padding-top: 6px;
                 margin-left: -6px;
+            }
+            &_right > span {
+                margin-left: 0;
             }
         }
         &__author {
