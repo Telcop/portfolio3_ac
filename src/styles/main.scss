@@ -132,6 +132,10 @@ h1, h2, h3, h4, p {
 
 .block-text {
     flex-basis: calc(100% - 500px);
+    &_anderson {
+        margin-top: -19px;
+        margin-left: 108px;
+    }
     &__name {
         font-family: "Open Sans";
         font-size: 18px;
@@ -163,6 +167,9 @@ h1, h2, h3, h4, p {
             letter-spacing: 0.9px;
         }
     }
+    &__paragraph {
+        margin-bottom: 56px;
+    }
     &__description {
         display: flex;
         font-family: "Open Sans";
@@ -171,6 +178,16 @@ h1, h2, h3, h4, p {
         letter-spacing: 0.75px;
         padding-bottom: 23px;
         max-width: 574px;
+        &_date {
+            padding-bottom: 7px; 
+        }
+    }
+    &__subtitle {
+        color: $title-color;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.9px;
+        padding-bottom: 18px;
     }
     &__btn {
         display: block;
@@ -192,7 +209,9 @@ h1, h2, h3, h4, p {
             width: 185px;
         }
         &_width_ {
-            width: 200px;
+            width: 88px;
+            margin-top: 0;
+            padding: 15px 15px 15px 35px;
         }
     }
     small {
@@ -214,9 +233,13 @@ h1, h2, h3, h4, p {
         padding-top: 149px;
         padding-bottom: 230px;
     }
-    &_padding_147 {
-        padding-top: 147px;
+    &_padding_147_ {
+        padding-top: 150px;
         padding-bottom: 230px;
+    }
+    &_padding_147 {
+        margin-top: 150px;
+        margin-bottom: 1173px;
     }
     &_grey {
         background-color: $bg-color;
@@ -266,11 +289,21 @@ h1, h2, h3, h4, p {
     &__svg {
         position: absolute;
         z-index: -1;
-        right: 0;
+        &_book {
+            right: 0;
+        }
+        &_anderson {
+            left: 0;
+        } 
     }
     &__img {
         margin-top: 48px;
-        margin-right: 44px;
+        &_book {
+            margin-right: 44px;
+        }
+        &_anderson {
+            margin-left: 51px;
+        }
     }
 }
 
@@ -407,7 +440,7 @@ h1, h2, h3, h4, p {
     justify-content: space-around;
     justify-items: center;
     margin-top: 86px;
-    margin-bottom: 80px;
+    margin-bottom: 83px;
     &-item {
         justify-self: center;
         &_center {
